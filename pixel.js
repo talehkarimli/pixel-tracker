@@ -14,10 +14,9 @@
         return;
     }
 
-    // Get the API endpoint from the script src or use relative path
-    var scriptSrc = script.src;
-    var API_BASE = scriptSrc ? scriptSrc.replace('/static/tracking/pixel.js', '') : '';
-    var TRACK_ENDPOINT = API_BASE + '/api/track/';
+// ALWAYS send events to your backend URL
+var TRACK_ENDPOINT = "https://fringelike-renae-unterrific.ngrok-free.dev/api/track/";
+
 
     // Cookie helpers
     function getCookie(name) {
